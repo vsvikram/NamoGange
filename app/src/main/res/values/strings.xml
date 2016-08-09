@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NamoGange</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="ganga_desc1">The Ganga, especially, is the river of India, beloved of her people,
+        round which are intertwined her memories, her hopes and fears, her songs of triumph,
+        her victories and her defeats. She has been a symbol of India’s age-long culture and civilization,
+        ever changing, ever flowing, and yet ever the same Ganga.-Jawaharlal Nehru</string>
+    <string name="ganga_desc2">Ganga River is one of the prime rivers of India and is declared as the
+        National River of India. It flows east through the Gangetic plains of Northern India into the
+        country of Bangladesh. The river has immense religious significance and considered as the
+        holy river of the Hindus. Historically too the river is important as many important cities
+        and capitals have been located along its banks. The Ganga sustains one of the world\'s highest
+        densities of population and drains an area of approximately 1000000 sq. kms.</string>
+    <string name="ganga_desc3">Ganga River originates in the Himalayas and is 2, 510 km (1, 557 meters) long.
+        It begins at the Gangotri glacier in the state of Uttarakhand in the central Himalayas at the concourse
+        of five headstreams - Bhagirathi River, Mandakini, Alaknanda River, Dhauliganga and Pindar at Dev Prayag.
+        Ganga or, more exactly, Bhagirathi, originates from Gangotri glacier,
+        one of the biggest glaciers in Himalayas.</string>
+</resources>
