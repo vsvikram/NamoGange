@@ -11,8 +11,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import action.namogange.dummy.DummyContent;
+
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, ItemFragment.OnListFragmentInteractionListener {
 
 
     @Override
@@ -76,7 +78,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.about_ganga) {
             setFragment(new AboutGanga(), title);
         } else if (id == R.id.places) {
-            setFragment(new AboutGanga(), title);
+            setFragment(new ItemFragment(), title);
         } else if (id == R.id.gallery) {
 
         } else if (id == R.id.notifications) {
@@ -100,4 +102,9 @@ public class MainActivity extends AppCompatActivity
                 .commit();
 
     }
+
+    public void onListFragmentInteraction(DummyContent.DummyItem item) {
+
+    }
+
 }
