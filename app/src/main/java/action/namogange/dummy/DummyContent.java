@@ -3,6 +3,8 @@ package action.namogange.dummy;
 import java.util.ArrayList;
 import java.util.List;
 
+import action.namogange.R;
+
 /**
  * Helper class for providing sample content for user interfaces created by
  * Android template wizards.
@@ -20,6 +22,11 @@ public class DummyContent {
             "Kushavarta Ghat", "Vishnu Ghat", "Asthi Pravah Ghat", "Subhash Ghat", "Gurukula Kangri Vishwavidyalaya",
             "Faculty of Engineering & Technology"};
 
+
+    private static int[] image_list = {R.mipmap.har_ki_pauri, R.mipmap.mansa_devi, R.mipmap.bharat_mata_mandir, R.mipmap.chandi_devi,
+            R.mipmap.vaishno_devi, R.mipmap.daksha_mandir, R.mipmap.shanti_kunj, R.mipmap.gau_ghat, R.mipmap.kush_ghat, R.mipmap.vishnu_ghat,
+            R.mipmap.ashthi_pravah, R.mipmap.subhash_ghat, R.mipmap.gkv, R.mipmap.fet_gkv};
+
     private static final int COUNT = 14;
 
     static {
@@ -34,17 +41,17 @@ public class DummyContent {
     }
 
     private static DummyItem createDummyItem(int position) {
-        return new DummyItem(String.valueOf(position),places_names[position]);
+        return new DummyItem(image_list[position], places_names[position]);
     }
 
     /**
      * A dummy item representing a piece of content.
      */
     public static class DummyItem {
-        public final String id;
+        public final int id;
         public final String content;
 
-        public DummyItem(String id, String content) {
+        public DummyItem(int id, String content) {
             this.id = id;
             this.content = content;
         }
