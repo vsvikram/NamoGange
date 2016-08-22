@@ -1,6 +1,7 @@
 package action.namogange;
 
 import android.content.Intent;
+import android.location.Location;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -12,10 +13,38 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.ArrayList;
+
 import action.namogange.dummy.DummyContent;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, ItemFragment.OnListFragmentInteractionListener {
+    String title = "About Ganga";
+    final Location Loc_HARI_KI_PAURI = new Location("");
+    final Location Loc_MANSA_DEVI = new Location("");
+    final Location Loc_BHARAT_MATA_MANDIR = new Location("");
+    final Location Loc_CHANDI_DEVI_MANDIR = new Location("");
+    final Location Loc_VAISHNO_DEVI_MANDIR = new Location("");
+    final Location Loc_DAKSHA_MAHADEV_TEMPLE = new Location("");
+    final Location Loc_SATI_KHUND = new Location("");
+    final Location Loc_SHANTI_KUNJ = new Location("");
+
+    final Location Loc_VIP_GHAT = new Location("");
+    final Location Loc_GAU_GHAT = new Location("");
+    final Location Loc_KUSHAVARTA_GHAT = new Location("");
+    final Location Loc_VISHNU_GHAT = new Location("");
+    final Location Loc_BIRLA_GHAT = new Location("");
+    final Location Loc_ASTHI_PARVAT_GHAT = new Location("");
+    final Location Loc_SHUBHAS_GHAT = new Location("");
+    final Location Loc_RAM_GHAT = new Location("");
+    final Location Loc_PREM_NAGAR_GHAT = new Location("");
+    final Location Loc_SINGH_DWAR_GHAT = new Location("");
+    final Location Loc_JATWARA_PUL_GHAT = new Location("");
+    final Location Loc_MY_LOCATION = new Location("");
+
+
+    final Location Loc_GURUKUL_KANGRI = new Location("");
+    final Location Loc_FET = new Location("");
 
 
     @Override
@@ -35,8 +64,17 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         if (savedInstanceState == null) {
             navigationView.setCheckedItem(R.id.about_ganga);
-            setFragment(new AboutGanga(), "About Ganga");
+            setFragment(new AboutGanga(), title);
+        } else {
+            title = savedInstanceState.getString("title");
+            setTitle(title);
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("title", title);
     }
 
     @Override
@@ -77,7 +115,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        String title = item.getTitle().toString();
+        title = item.getTitle().toString();
         if (id == R.id.about_ganga) {
             setFragment(new AboutGanga(), title);
         } else if (id == R.id.places) {
@@ -112,8 +150,73 @@ public class MainActivity extends AppCompatActivity
                 "Vaishno Devi Temple", "Daksha Temple", "Shantikunj", "Gau Ghat",
                 "Kushavarta Ghat", "Vishnu Ghat", "Asthi Pravah Ghat", "Subhash Ghat", "GKV", "FET,GKV"};
 
+        Loc_HARI_KI_PAURI.setLatitude(29.956603);
+        Loc_HARI_KI_PAURI.setLongitude(78.171496);
+        Loc_MANSA_DEVI.setLatitude(29.957632);
+        Loc_MANSA_DEVI.setLongitude(78.165240);
+        Loc_BHARAT_MATA_MANDIR.setLatitude(29.984871);
+        Loc_BHARAT_MATA_MANDIR.setLongitude(78.191897);
+        Loc_CHANDI_DEVI_MANDIR.setLatitude(29.993659);
+        Loc_CHANDI_DEVI_MANDIR.setLongitude(78.179867);
+        Loc_VAISHNO_DEVI_MANDIR.setLatitude(29.930595);
+        Loc_VAISHNO_DEVI_MANDIR.setLongitude(78.119500);
+        Loc_DAKSHA_MAHADEV_TEMPLE.setLatitude(29.921800);
+        Loc_DAKSHA_MAHADEV_TEMPLE.setLongitude(78.145893);
+        Loc_SATI_KHUND.setLatitude(29.920582);
+        Loc_SATI_KHUND.setLongitude(78.138275);
+        Loc_SHANTI_KUNJ.setLatitude(29.988800);
+        Loc_SHANTI_KUNJ.setLongitude(78.191895);
+
+        Loc_VIP_GHAT.setLatitude(29.957087);
+        Loc_VIP_GHAT.setLongitude(78.173629);
+        Loc_GAU_GHAT.setLatitude(29.954063);
+        Loc_GAU_GHAT.setLongitude(78.169415);
+        Loc_KUSHAVARTA_GHAT.setLatitude(29.953305);
+        Loc_KUSHAVARTA_GHAT.setLongitude(78.168668);
+        Loc_VISHNU_GHAT.setLatitude(29.951131);
+        Loc_VISHNU_GHAT.setLongitude(78.165816);
+        Loc_BIRLA_GHAT.setLatitude(29.947786);
+        Loc_BIRLA_GHAT.setLongitude(78.161945);
+        Loc_ASTHI_PARVAT_GHAT.setLatitude(29.948310);
+        Loc_ASTHI_PARVAT_GHAT.setLongitude(78.162265);
+        Loc_SHUBHAS_GHAT.setLatitude(29.954771);
+        Loc_SHUBHAS_GHAT.setLongitude(78.170109);
+        Loc_RAM_GHAT.setLatitude(29.951718);
+        Loc_RAM_GHAT.setLongitude(78.166497);
+        Loc_PREM_NAGAR_GHAT.setLatitude(29.930107);
+        Loc_PREM_NAGAR_GHAT.setLongitude(78.135989);
+        Loc_SINGH_DWAR_GHAT.setLatitude(29.926134);
+        Loc_SINGH_DWAR_GHAT.setLongitude(78.131732);
+        Loc_JATWARA_PUL_GHAT.setLatitude(29.918943);
+        Loc_JATWARA_PUL_GHAT.setLongitude(78.103515);
+
+        Loc_GURUKUL_KANGRI.setLatitude(29.923887);
+        Loc_GURUKUL_KANGRI.setLongitude(78.127502);
+        Loc_FET.setLatitude(29.916866);
+        Loc_FET.setLongitude(78.063784);
+
+        final ArrayList<Location> locList = new ArrayList<Location>();
+        locList.add(Loc_HARI_KI_PAURI);
+        locList.add(Loc_MANSA_DEVI);
+        locList.add(Loc_BHARAT_MATA_MANDIR);
+        locList.add(Loc_CHANDI_DEVI_MANDIR);
+        locList.add(Loc_VAISHNO_DEVI_MANDIR);
+        locList.add(Loc_DAKSHA_MAHADEV_TEMPLE);
+        locList.add(Loc_SHANTI_KUNJ);
+        locList.add(Loc_GAU_GHAT);
+        locList.add(Loc_KUSHAVARTA_GHAT);
+        locList.add(Loc_VISHNU_GHAT);
+        locList.add(Loc_ASTHI_PARVAT_GHAT);
+        locList.add(Loc_SHUBHAS_GHAT);
+        locList.add(Loc_GURUKUL_KANGRI);
+        locList.add(Loc_FET);
+
+
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra("title", str[position]);
+        intent.putExtra("latitude", locList.get(position).getLatitude());
+        intent.putExtra("longitude", locList.get(position).getLongitude());
+
         switch (position) {
             case 0:
                 intent.putExtra("url", "<html><body><img style=\"width:100%;\" src=\"file:///android_res/mipmap/har_ki_pauri.jpg\"/><p style=\"color:#646464;\">Har Ki Pauri is a famous ghat on the banks of the Ganges in Haridwar in Uttarakhand state in India. This revered place is the major landmark of the holy city of Haridwar.<br/>Har Ki Pauri is also the area where thousands of pilgrims converge and the festivities commence during the Kumbha Mela, which takes place every twelve years, and the Ardh Kumbh Mela, which takes place every six years and the Punjabi festival of Vaisakhi, a harvest festival occurring every year in the month of April .</p><h3 style=\"text-align:center; color:#03A9F4;\">The Ganga Aarti</h3><img style=\"width:100%;\" src=\"file:///android_res/mipmap/ganga_aarti.jpg\"/><p style=\"color:#646464;\">Each evening at sunset priests perform Ganga Aarti here, when lights are set on the water to drift downstream. A large number of people gather on both the banks of river Ganges to sing its praises. The priests hold large fire bowls in their hands, the gongs in the temples at the Ghat start ringing and the chants flowing out of lips fill the air. People float earthen Diyas, with burning flickers and flowers in them as a symbol of hope and wishes .The golden hues of floral diyas reflected in the river Ganges presents spectacular view.</p><strong><p style=\"color:#646464;\">Keep Ganga Clean.<br/>Take a pledge to protect your local water bodies and environment, and to inspire your friends, family and community to do the same.</br></br></br></p></strong></body></html>");
