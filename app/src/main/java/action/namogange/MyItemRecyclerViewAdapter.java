@@ -27,29 +27,47 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
         mListener = listener;
     }
 
+    public MyItemRecyclerViewAdapter(List<DummyItem> items) {
+        mValues = items;
+        mListener = null;
+    }
+
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.fragment_item, parent, false);
-        return new ViewHolder(view);
+        if (mListener == null) {
+            View view = LayoutInflater.from(parent.getContext())
+                    .inflate(R.layout.fragment_gallery, parent, false);
+            return new ViewHolder(view);
+        } else {
+            View view = LayoutInflater.from(parent.getContext())
+                    .inflate(R.layout.fragment_item, parent, false);
+            return new ViewHolder(view);
+        }
     }
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position) {
-        holder.mItem = mValues.get(position);
-        holder.mIdView.setImageResource(mValues.get(position).id);
-        holder.mContentView.setText(mValues.get(position).content);
+        if (mListener == null) {
+            holder.mItem = mValues.get(position);
+            holder.mIdView.setImageResource(holder.mItem.id);
+        } else {
+            holder.mItem = mValues.get(position);
+            holder.mIdView.setImageResource(holder.mItem.id);
+            holder.mContentView.setText(holder.mItem.content);
 
-        holder.mView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (null != mListener) {
-                    // Notify the active callbacks interface (the activity, if the
-                    // fragment is attached to one) that an item has been selected.
-                    mListener.onListFragmentInteraction(holder.mItem,position);
+            holder.mView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (null != mListener) {
+                        // Notify the active callbacks interface (the activity, if the
+                        // fragment is attached to one) that an item has been selected.
+                        mListener.onListFragmentInteraction(holder.mItem, position);
+                    }
                 }
-            }
-        });
+            });
+        }
+
+
     }
 
     @Override
@@ -65,9 +83,16 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
 
         public ViewHolder(View view) {
             super(view);
-            mView = view;
-            mIdView = (ImageView) view.findViewById(R.id.id);
-            mContentView = (TextView) view.findViewById(R.id.content);
+            if (mListener == null) {
+                mIdView = (ImageView) view.findViewById(R.id.id);
+                mView = view;
+                mContentView = null;
+            } else {
+                mView = view;
+                mIdView = (ImageView) view.findViewById(R.id.id);
+                mContentView = (TextView) view.findViewById(R.id.content);
+            }
+
         }
 
         @Override
@@ -75,4 +100,5 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
             return super.toString() + " '" + mContentView.getText() + "'";
         }
     }
+
 }

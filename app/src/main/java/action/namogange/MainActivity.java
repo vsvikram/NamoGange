@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.places) {
             setFragment(new ItemFragment(), title);
         } else if (id == R.id.gallery) {
-
+            setFragment(new GalleryFragment(), title);
         } else if (id == R.id.notifications) {
 
         } else if (id == R.id.nav_share) {
