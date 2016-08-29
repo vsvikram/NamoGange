@@ -20,6 +20,7 @@ import action.namogange.dummy.DummyContent;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, ItemFragment.OnListFragmentInteractionListener {
     String title = "About Ganga";
+
     final Location Loc_HARI_KI_PAURI = new Location("");
     final Location Loc_MANSA_DEVI = new Location("");
     final Location Loc_BHARAT_MATA_MANDIR = new Location("");
