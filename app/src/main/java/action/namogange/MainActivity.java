@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -20,6 +21,7 @@ import action.namogange.dummy.DummyContent;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, ItemFragment.OnListFragmentInteractionListener {
     String title = "About Ganga";
+    long lastPress;
 
     final Location Loc_HARI_KI_PAURI = new Location("");
     final Location Loc_MANSA_DEVI = new Location("");
@@ -84,7 +86,15 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            if (getSupportFragmentManager().getBackStackEntryCount() == 0) {
+                long currentTime = System.currentTimeMillis();
+                if (currentTime - lastPress > 3000) {
+                    Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_LONG).show();
+                    lastPress = currentTime;
+                } else {
+                    super.onBackPressed();
+                }
+            }
         }
     }
 
