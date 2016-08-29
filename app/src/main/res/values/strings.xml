@@ -20,5 +20,25 @@
         of five headstreams - Bhagirathi River, Mandakini, Alaknanda River, Dhauliganga and Pindar at Dev Prayag.
         Ganga or, more exactly, Bhagirathi, originates from Gangotri glacier,
         one of the biggest glaciers in Himalayas.</string>
+    <string name="ganga_article1">The Supreme Court on Wednesday expressed disappointment with the Centre
+        for its lack of a long-term vision to clean the river Ganga. Expressing the anguish Justice Thakur
+        said: If the discharge of industrial pollutants into the river stooped, 30% of the Ganga would be clean.
+        Corruption was stalling the clean Ganga project and heads must roll out for this. The Central Pollution
+        Control Board (CPCB), a statutory body which is to take effective steps, is not in a position to stop the
+        polluting units from discharging effluents into the river. Units are being allowed to run accepting bribe.
+        This is breeding corruption and the board is not doing it work.</string>
+    <string name="ganga_article2">According to a study conducted by Anil Kumar Misra (2010), the Yamuna
+        is one of the most polluted rivers of India.The discharge of untreated domestic and industrial effluents have severely affected the quality of Yamuna River and now
+        it falls under the category E, which makes it fit only for recreation and industrial cooling, completely ruling out the
+        possibility for underwater life and domestic supply. Almost every year mass death of fishes is reported. Pollution levels
+        in the Yamuna River have risen. Biochemical oxygen demand (BOD) load has increased by 2.5 times between 1980 and 2005:
+        From 117 tonnes per day (TDP) in 1980 to 276 TDP in 2005. The Yamuna has been reduced to a small stream, draining
+        industrial effluents, sewage, dirt and other toxic substances. There is an urgent need to take stringent measures
+        to alleviate these pollution loads and save an ailing river</string>
+    <string name="ganga_article3">In Hinduism, the river Ganges is considered sacred and is personified as a goddess known as Ganga. It is worshipped by
+        Hindus who believe that bathing in the river causes the remission of sins and facilitates Moksha (liberation from the
+        cycle of life and death). Pilgrims travel long distances to immerse the ashes of their kin in the precious water of the
+        Ganges, bringing their spirits closer to moksha.<br/><br/>Several places sacred to Hindus lie along the banks of the Ganges,
+        including Gangotri, Haridwar, Allahabad and Varanasi.</string>
     <string name="title_activity_detail">DetailActivity</string>
 </resources>

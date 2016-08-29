@@ -12,6 +12,6 @@
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
-        android:src="@mipmap/header_image"/>
+        android:src="@mipmap/article3"/>
 
 </LinearLayout>

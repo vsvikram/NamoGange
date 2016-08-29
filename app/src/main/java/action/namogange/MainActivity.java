@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.gallery) {
             setFragment(new GalleryFragment(), title);
         } else if (id == R.id.public_articles) {
-
+            setFragment(new PublicArticles(), title);
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
