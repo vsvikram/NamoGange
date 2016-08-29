@@ -12,6 +12,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -72,6 +74,19 @@ public class MainActivity extends AppCompatActivity
             title = savedInstanceState.getString("title");
             setTitle(title);
         }
+
+        ImageView headerImage = (ImageView) findViewById(R.id.header_image);
+        headerImage.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+                if (drawer.isDrawerOpen(GravityCompat.START)) {
+                    drawer.closeDrawer(GravityCompat.START);
+                } else {
+                    drawer.closeDrawer(GravityCompat.START);
+                }
+            }
+        });
+
     }
 
     @Override
@@ -133,7 +148,7 @@ public class MainActivity extends AppCompatActivity
             setFragment(new ItemFragment(), title);
         } else if (id == R.id.gallery) {
             setFragment(new GalleryFragment(), title);
-        } else if (id == R.id.notifications) {
+        } else if (id == R.id.public_articles) {
 
         } else if (id == R.id.nav_share) {
 

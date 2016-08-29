@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/about_ganga"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="About Ganga"/>
-        <item
-            android:id="@+id/places"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Places To Visit"/>
-        <item
-            android:id="@+id/gallery"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Gallery"/>
-        <item
-            android:id="@+id/notifications"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Notifications"/>
-    </group>
+    <item android:title="NamoGange">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/about_ganga"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="About Ganga"/>
+                <item
+                    android:id="@+id/places"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="Places To Visit"/>
+                <item
+                    android:id="@+id/public_articles"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Public Articles"/>
+                <item
+                    android:id="@+id/gallery"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Gallery"/>
 
+            </group>
+        </menu>
+    </item>
     <item android:title="Communicate">
         <menu>
             <item
