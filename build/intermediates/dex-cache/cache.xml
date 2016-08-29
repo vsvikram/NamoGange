@@ -1,3 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1e894805241d9f27e5f883fe2f56094c10ce3aa3">
+        <dex dex="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_5be6fa5302aee29a52cfbdbb5301661e2231c1e7\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.0.1_dc0c1403525bb34ddc7f7ed950434dad6beea52a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.1_d85082a28ca70376a5c02852e372f2227a12537c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.0.1_5ec4dc73c5c58077a4e2a9288b14c3c5e9fa9f9b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vicky\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.0.1_c6a457ad9015d3b60b808080142837826cbf58f3\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="0f0a9a71635477a7c9f3dc36b5537595fa75d4aa">
+        <dex dex="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_948311814f2a6529bc56c032f4aae52d60eaca05\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
+        <dex dex="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.0.1_7bee13dfedd0219fa79c64940d44777e363ace7a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.0.1_d457b4ff4198530d02f073f5cd435d678800ace9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\vicky\AndroidStudioProjects\NamoGange\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.0.1_d3f14a53d660c907b56e32a424c666f5be5a5a7a\classes.dex" />
+    </item>
+
+</items>
