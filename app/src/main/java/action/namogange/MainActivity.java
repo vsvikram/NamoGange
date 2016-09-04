@@ -16,6 +16,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesUtil;
+
 import java.util.ArrayList;
 
 import action.namogange.dummy.DummyContent;
@@ -24,6 +27,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, ItemFragment.OnListFragmentInteractionListener {
     String title = "About Ganga";
     long lastPress;
+    private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 1000;
 
     final Location Loc_HARI_KI_PAURI = new Location("");
     final Location Loc_MANSA_DEVI = new Location("");
@@ -86,6 +90,23 @@ public class MainActivity extends AppCompatActivity
                 }
             }
         });
+
+        int resultCode = GooglePlayServicesUtil.isGooglePlayServicesAvailable(this);
+        if (resultCode != ConnectionResult.SUCCESS) {
+            if (GooglePlayServicesUtil.isUserRecoverableError(resultCode)) {
+                GooglePlayServicesUtil.getErrorDialog(resultCode, this,
+                        PLAY_SERVICES_RESOLUTION_REQUEST).show();
+            } else {
+                Toast.makeText(getApplicationContext(),
+                        "Location Services are not supported.", Toast.LENGTH_LONG)
+                        .show();
+                finish();
+            }
+
+        } else {
+            Intent intent = new Intent(this, LocationService.class);
+            startService(intent);
+        }
 
     }
 
