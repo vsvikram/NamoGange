@@ -1,5 +1,6 @@
 package action.namogange;
 
+import android.app.NotificationManager;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.net.Uri;
@@ -50,6 +51,9 @@ public class DetailActivity extends AppCompatActivity {
             webSettings.setSupportZoom(true);
             webView.loadDataWithBaseURL(null, url, "text/html", "UTF-8", null);
         }
+
+        NotificationManager notificationManager = (NotificationManager) this.getSystemService(NOTIFICATION_SERVICE);
+        notificationManager.cancel(1);
 
     }
 

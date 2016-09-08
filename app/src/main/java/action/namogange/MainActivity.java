@@ -1,9 +1,13 @@
 package action.namogange;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -27,6 +31,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, ItemFragment.OnListFragmentInteractionListener {
     String title = "About Ganga";
     long lastPress;
+    private static int LOCATION_PERMISSIONS = 1;
     private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 1000;
 
     final Location Loc_HARI_KI_PAURI = new Location("");
@@ -49,7 +54,6 @@ public class MainActivity extends AppCompatActivity
     final Location Loc_PREM_NAGAR_GHAT = new Location("");
     final Location Loc_SINGH_DWAR_GHAT = new Location("");
     final Location Loc_JATWARA_PUL_GHAT = new Location("");
-    final Location Loc_MY_LOCATION = new Location("");
 
 
     final Location Loc_GURUKUL_KANGRI = new Location("");
@@ -104,8 +108,29 @@ public class MainActivity extends AppCompatActivity
             }
 
         } else {
-            Intent intent = new Intent(this, LocationService.class);
-            startService(intent);
+            if (ActivityCompat.checkSelfPermission(this,
+                    android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                    ActivityCompat.checkSelfPermission(this,
+                            android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
+                        Manifest.permission.ACCESS_COARSE_LOCATION}, LOCATION_PERMISSIONS);
+
+            } else {
+                Intent intent = new Intent(this, LocationService.class);
+                startService(intent);
+            }
+
+        }
+
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if (requestCode == LOCATION_PERMISSIONS) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Intent intent = new Intent(this, LocationService.class);
+                startService(intent);
+            }
         }
 
     }
