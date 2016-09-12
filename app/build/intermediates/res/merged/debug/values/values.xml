@@ -321,6 +321,37 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="description1">
+        Application Features:\n\n
+
+        \t1. Application will start fetching Location Updates from GPS/Network Provider using Google Play Services. Application will alert users to keep Ganga Clean, when they are near locations in Locations List provided.\n\n
+        \t2. Aplication provides option to get more knowledge about their location in Alert Dialog\n\n
+        \t3. About Ganga: Application provides detailed knowledge about significance of River Ganga in real life, Spiritual and Cultural Heritage, Natural Benefits and Ganga Maps foe general Awareness\n\n
+        \t4. Places To Visit: Application provides knowledge about Historical Temple, Ganga Ghats and other important places to visit in haridwar.\n
+            It also provides Google Maps Route from your current location to all places to visit.\n\n
+        \t5. Application gives introduction of National Mission for Clean Ganga (NMCG) Government Program.\n
+    </string>
+    <string name="description2">
+        List of Locations\n\n
+        Hari Ki Pauri, Haridwar\n
+        Mansa Devi Temple, Haridwar\n
+        Bharat Mata Mandir, Haridwar\n
+        Chandi Devi Temple, Haridwar\n
+        Vaishno Devi Temple, Haridwar\n
+        Pawan Dham, Haridwar\n
+        Gau Ghat, Haridwar\n
+        Vishnu Ghat, Haridwar\n
+        Birla Ghat\n
+        Kushavarta Ghat\n
+        Ashthi Pravah Ghat, Haridwar\n
+        Shubhash Ghat, Haridwar\n
+        Ram Ghat, Haridwar\n
+        Prem Nagar Ashram Ghat, Haridwar\n
+        Singh Dwar, Haridwar\n
+        Jatwara Pul, Haridwar\n
+        Daksh Mahadev Temple, Haridwar\n
+        Shanti Kunj, Haridwar\n
+    </string>
     <string name="ganga_article1">The Supreme Court on Wednesday expressed disappointment with the Centre
         for its lack of a long-term vision to clean the river Ganga. Expressing the anguish Justice Thakur
         said: If the discharge of industrial pollutants into the river stooped, 30% of the Ganga would be clean.

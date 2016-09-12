@@ -24,6 +24,10 @@
         "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png"
     },
     {
+        "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_info_black_24dp.png",
+        "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_info_black_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png",
         "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png"
     },
@@ -88,6 +92,10 @@
         "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\drawable-hdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
     },
     {
+        "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_directions_car_black_24dp.png",
+        "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_directions_car_black_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png",
         "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png"
     },
@@ -122,6 +130,10 @@
     {
         "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
         "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_home_black_24dp.png",
+        "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_home_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_pressed.9.png",
@@ -202,6 +214,14 @@
     {
         "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png",
         "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_event_note_black_24dp1.png",
+        "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_event_note_black_24dp1.png"
+    },
+    {
+        "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_photo_library_black_24dp.png",
+        "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_photo_library_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",

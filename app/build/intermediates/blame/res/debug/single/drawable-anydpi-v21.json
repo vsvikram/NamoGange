@@ -1,6 +1,26 @@
 [
     {
+        "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_photo_library_black_24dp.xml",
+        "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_photo_library_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_event_note_black_24dp1.xml",
+        "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_event_note_black_24dp1.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_home_black_24dp.xml",
+        "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_directions_car_black_24dp.xml",
+        "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_directions_car_black_24dp.xml"
+    },
+    {
         "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_event_note_black_24dp.xml",
         "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_event_note_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_info_black_24dp.xml",
+        "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_info_black_24dp.xml"
     }
 ]

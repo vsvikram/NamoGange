@@ -1,7 +1,27 @@
 [
     {
+        "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_event_note_black_24dp1.png",
+        "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_event_note_black_24dp1.png"
+    },
+    {
+        "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_info_black_24dp.png",
+        "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_info_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_directions_car_black_24dp.png",
+        "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_directions_car_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_photo_library_black_24dp.png",
+        "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_photo_library_black_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\common_ic_googleplayservices.png",
         "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable-ldpi-v4\\common_ic_googleplayservices.png"
+    },
+    {
+        "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_home_black_24dp.png",
+        "source": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_home_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\vicky\\AndroidStudioProjects\\NamoGange\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_event_note_black_24dp.png",
